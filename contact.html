@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact – UATM-GASA Formation</title>
+<meta name="description" content="Contactez UATM-GASA Formation : adresse du siège à Cotonou, campus et formulaire de message.">
+<meta name="theme-color" content="#0f1b66">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <a class="brand" href="index.html" aria-label="UATM-GASA Formation – Accueil">
+    <span class="logo"><img src="images/logo.png" alt="Logo UATM-GASA Formation"></span>
+    <span class="brand-text"><b>UATM-GASA</b><small>Formation</small></span>
+  </a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Ouvrir ou fermer le menu">
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#formations">Formations</a>
+    <a href="index.html#campus">Campus</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+    <a class="cta" href="pre-inscription.html">Pré-inscription</a>
+  </nav>
+  <label class="burger" for="menu-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Contact</h1>
+      <p>Une question sur les filières, les inscriptions ou les campus ? Écrivez-nous ou passez nous voir au siège.</p>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap form-layout">
+      <div>
+        <form class="form-card" id="contact-form" data-form data-title="Message – UATM-GASA Formation" data-result="contact-result" data-ready-title="Votre message est prêt" data-ready-text="Copiez ou imprimez votre message." data-sent-title="Message envoyé" data-sent-text="Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais." novalidate>
+          <p class="form-error" role="alert" hidden></p>
+          <div class="grid2">
+            <div class="field"><label for="c-nom">Nom complet <i class="req">*</i></label><input type="text" id="c-nom" name="nom" autocomplete="name" required minlength="2" data-label="Nom"><p class="err" aria-live="polite"></p></div>
+            <div class="field"><label for="c-email">E-mail <i class="req">*</i></label><input type="email" id="c-email" name="email" autocomplete="email" required data-label="E-mail"><p class="err" aria-live="polite"></p></div>
+            <div class="field"><label for="c-tel">Téléphone</label><input type="tel" id="c-tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="+229 …" data-label="Téléphone"><p class="err" aria-live="polite"></p></div>
+            <div class="field"><label for="c-objet">Objet <i class="req">*</i></label>
+              <select id="c-objet" name="objet" required data-label="Objet"><option value="">Choisir un objet</option><option>Informations sur les filières</option><option>Pré-inscription</option><option>Frais de scolarité</option><option>Campus et horaires</option><option>Autre demande</option></select><p class="err" aria-live="polite"></p></div>
+            <div class="field full"><label for="c-msg">Message <i class="req">*</i></label><textarea id="c-msg" name="message" required minlength="10" data-label="Message"></textarea><p class="err" aria-live="polite"></p></div>
+          </div>
+          <div class="actions" style="margin-top:20px"><button class="btn gold" type="submit">Envoyer le message</button><button class="btn outline" type="reset">Effacer</button></div>
+        </form>
+
+        <section class="recap" id="contact-result" hidden aria-labelledby="c-ok">
+          <h2 id="c-ok"></h2>
+          <p class="meta"></p>
+          <dl></dl>
+          <p class="sub after" style="margin-bottom:18px"></p>
+          <div class="actions">
+            <button class="btn dark" type="button" data-print>Imprimer</button>
+            <button class="btn outline" type="button" data-copy>Copier le message</button>
+            <a class="btn outline" data-mail hidden>Envoyer par e-mail</a>
+            <button class="btn outline" type="button" data-edit>Modifier</button>
+            <span class="copied" role="status"></span>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="info-grid">
+          <div class="info"><span class="ic" aria-hidden="true">1</span><div><b>Siège</b><p>2<sup>e</sup> rue à gauche après le CEG Gbégamey, Cotonou, Bénin</p></div></div>
+          <div class="info"><span class="ic" aria-hidden="true">2</span><div><b>Adresse postale</b><p>04 BP 1361 Cotonou</p></div></div>
+          <div class="info"><span class="ic" aria-hidden="true">3</span><div><b>Campus</b><p>Gbégamey, Agla, Akpakpa (Cotonou), Abomey-Calavi et Porto-Novo</p></div></div>
+          <div class="info"><span class="ic" aria-hidden="true">4</span><div><b>Pré-inscription</b><p><a href="pre-inscription.html"><u>Remplir le dossier en ligne</u></a></p></div></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="foot-brand" href="index.html" aria-label="UATM-GASA Formation – Accueil">
+          <span class="logo"><img src="images/logo.png" alt="" ></span>
+          <span><b>UATM-GASA</b><small>Formation</small></span>
+        </a>
+        <p class="foot-about">Université Africaine de Technologie et de Management. Le Générateur d’Avenir, depuis 1992.</p>
+        <a class="btn gold" href="pre-inscription.html">Se pré-inscrire</a>
+      </div>
+      <nav class="foot-links" aria-label="Navigation du pied de page">
+        <h4>Université</h4>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#formations">Formations</a>
+        <a href="index.html#campus">Campus</a>
+        <a href="pre-inscription.html">Pré-inscription</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav class="foot-links" aria-label="Domaines de formation">
+        <h4>Domaines</h4>
+        <a href="index.html#formations">Sciences et Technologies</a>
+        <a href="index.html#formations">Sciences de Gestion</a>
+        <a href="index.html#formations">Agronomie et Sciences du vivant</a>
+        <a href="index.html#formations">Droit et Relations internationales</a>
+      </nav>
+      <div class="foot-contact">
+        <h4>Nous trouver</h4>
+        <p><b>Siège</b>2<sup>e</sup> rue à gauche après le CEG Gbégamey, Cotonou, Bénin</p>
+        <p><b>Adresse postale</b>04 BP 1361 Cotonou</p>
+        <p><b>Campus</b>Gbégamey, Agla, Akpakpa, Abomey-Calavi, Porto-Novo</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 UATM-GASA Formation. Tous droits réservés.</span>
+      <span>Cotonou, Bénin</span>
+    </div>
+  </div>
+</footer>
+
+<a class="fab" href="pre-inscription.html">Pré-inscription</a>
+<script src="js/main.js"></script>
+</body>
+</html>

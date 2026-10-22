@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pré-inscription – UATM-GASA Formation</title>
+<meta name="description" content="Formulaire de pré-inscription en ligne à UATM-GASA Formation : identité, coordonnées, formation souhaitée et parcours.">
+<meta name="theme-color" content="#0f1b66">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <a class="brand" href="index.html" aria-label="UATM-GASA Formation – Accueil">
+    <span class="logo"><img src="images/logo.png" alt="Logo UATM-GASA Formation"></span>
+    <span class="brand-text"><b>UATM-GASA</b><small>Formation</small></span>
+  </a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Ouvrir ou fermer le menu">
+  <nav class="nav" id="nav" aria-label="Navigation principale">
+    <a href="index.html">Accueil</a>
+    <a href="index.html#formations">Formations</a>
+    <a href="index.html#campus">Campus</a>
+    <a href="contact.html">Contact</a>
+    <a class="cta" href="pre-inscription.html" aria-current="page">Pré-inscription</a>
+  </nav>
+  <label class="burger" for="menu-toggle" aria-hidden="true"><span></span><span></span><span></span></label>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="wrap">
+      <h1>Pré-inscription</h1>
+      <p>Renseignez votre dossier en quatre étapes. Un récapitulatif est généré à la fin, à imprimer ou à copier.</p>
+    </div>
+  </section>
+
+  <section class="section tint">
+    <div class="wrap form-layout">
+      <div>
+        <form class="form-card" id="pre-form" data-form data-title="Fiche de pré-inscription – UATM-GASA Formation" data-result="pre-result" data-ready-title="Votre fiche de pré-inscription est prête" data-ready-text="Imprimez ou enregistrez cette fiche en PDF, puis présentez-la à l’administration avec vos pièces." data-sent-title="Pré-inscription transmise" data-sent-text="Votre dossier a bien été transmis. Conservez ce récapitulatif." novalidate>
+          <p class="form-error" role="alert" hidden></p>
+
+          <fieldset>
+            <legend><span>1</span>Identité</legend>
+            <div class="grid2">
+              <div class="field"><label for="nom">Nom <i class="req">*</i></label><input type="text" id="nom" name="nom" autocomplete="family-name" required minlength="2" data-label="Nom"><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="prenoms">Prénoms <i class="req">*</i></label><input type="text" id="prenoms" name="prenoms" autocomplete="given-name" required minlength="2" data-label="Prénoms"><p class="err" aria-live="polite"></p></div>
+              <div class="field full"><span class="lbl">Sexe <i class="req">*</i></span><div class="choices" role="radiogroup" aria-label="Sexe"><label class="choice"><input type="radio" name="sexe" value="Féminin" required data-label="Sexe"><span>Féminin</span></label><label class="choice"><input type="radio" name="sexe" value="Masculin" required data-label="Sexe"><span>Masculin</span></label></div><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="naissance">Date de naissance <i class="req">*</i></label><input type="date" id="naissance" name="naissance" autocomplete="bday" required data-label="Date de naissance"><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="lieu">Lieu de naissance <i class="req">*</i></label><input type="text" id="lieu" name="lieu" required minlength="2" data-label="Lieu de naissance"><p class="err" aria-live="polite"></p></div>
+              <div class="field full"><label for="nationalite">Nationalité <i class="req">*</i></label><input type="text" id="nationalite" name="nationalite" required minlength="3" data-label="Nationalité"><p class="err" aria-live="polite"></p></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>2</span>Coordonnées</legend>
+            <div class="grid2">
+              <div class="field"><label for="tel">Téléphone <i class="req">*</i></label><input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" placeholder="+229 …" required data-label="Téléphone"><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="email">E-mail <i class="req">*</i></label><input type="email" id="email" name="email" autocomplete="email" required data-label="E-mail"><p class="err" aria-live="polite"></p></div>
+              <div class="field full"><label for="ville">Ville de résidence</label><input type="text" id="ville" name="ville" autocomplete="address-level2" data-label="Ville de résidence"><p class="err" aria-live="polite"></p></div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>3</span>Formation souhaitée</legend>
+            <div class="grid2">
+              <div class="field full"><label for="filiere">Filière souhaitée <i class="req">*</i></label>
+                <select id="filiere" name="filiere" required data-label="Filière"><option value="">Choisir une filière</option><optgroup label="Sciences et Technologies"><option>Réseaux informatiques et télécommunications</option><option>Systèmes informatiques et logiciels</option><option>Systèmes industriels</option><option>Génie électrique et énergies renouvelables</option><option>Froid et climatisation</option></optgroup><optgroup label="Sciences de Gestion"><option>Finance, comptabilité et audit</option><option>Gestion des ressources humaines</option><option>Entrepreneuriat et gestion de projet</option></optgroup><optgroup label="Agronomie et Sciences du vivant"><option>Agronomie</option><option>Productions animales</option><option>Horticulture</option><option>Biotechnologie</option></optgroup><optgroup label="Droit et Relations internationales"><option>Droit</option><option>Relations internationales et diplomatie</option></optgroup></select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="niveau">Niveau d’entrée <i class="req">*</i></label>
+                <select id="niveau" name="niveau" required data-label="Niveau d’entrée"><option value="">Choisir un niveau</option><option>Licence 1</option><option>Licence 2</option><option>Licence 3</option><option>Master 1</option><option>Master 2</option></select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="campus-choix">Campus souhaité <i class="req">*</i></label>
+                <select id="campus-choix" name="campus" required data-label="Campus souhaité"><option value="">Choisir un campus</option><option>Gbégamey, Cotonou (siège)</option><option>Agla, Cotonou</option><option>Akpakpa, Cotonou</option><option>Abomey-Calavi</option><option>Porto-Novo</option></select><p class="err" aria-live="polite"></p></div>
+              <div class="field full"><span class="lbl">Mode de formation <i class="req">*</i></span><div class="choices" role="radiogroup" aria-label="Mode de formation"><label class="choice"><input type="radio" name="mode" value="Présentiel" required data-label="Mode de formation"><span>Présentiel</span></label><label class="choice"><input type="radio" name="mode" value="E-learning" required data-label="Mode de formation"><span>E-learning</span></label></div><p class="err" aria-live="polite"></p></div>
+            </div>
+            <p class="sub" style="margin:12px 0 0;font-size:14.5px">La disponibilité de la filière dans le campus choisi sera confirmée par l’administration.</p>
+          </fieldset>
+
+          <fieldset>
+            <legend><span>4</span>Parcours scolaire</legend>
+            <div class="grid2">
+              <div class="field"><label for="diplome">Dernier diplôme obtenu <i class="req">*</i></label>
+                <select id="diplome" name="diplome" required data-label="Dernier diplôme"><option value="">Choisir</option><option>Baccalauréat</option><option>DUT / BTS</option><option>Licence</option><option>Master</option><option>Autre</option></select><p class="err" aria-live="polite"></p></div>
+              <div class="field"><label for="annee">Année d’obtention <i class="req">*</i></label><input type="number" id="annee" name="annee" min="1970" max="2026" inputmode="numeric" required data-year data-label="Année d’obtention"><p class="err" aria-live="polite"></p></div>
+              <div class="field full"><label for="etab">Établissement fréquenté <i class="req">*</i></label><input type="text" id="etab" name="etab" required minlength="2" data-label="Établissement précédent"><p class="err" aria-live="polite"></p></div>
+            </div>
+          </fieldset>
+
+          <div class="field">
+            <label class="agree"><input type="checkbox" name="certifie" required data-label="Informations certifiées exactes"><span>Je certifie que les informations fournies sont exactes. <i class="req">*</i></span></label>
+            <p class="err" aria-live="polite"></p>
+          </div>
+          <div class="actions"><button class="btn gold" type="submit">Valider ma pré-inscription</button><button class="btn outline" type="reset">Effacer</button></div>
+        </form>
+
+        <section class="recap" id="pre-result" hidden aria-labelledby="pre-ok">
+          <h2 id="pre-ok"></h2>
+          <p class="meta"></p>
+          <dl></dl>
+          <p class="sub after" style="margin-bottom:18px"></p>
+          <div class="actions">
+            <button class="btn dark" type="button" data-print>Imprimer / Enregistrer en PDF</button>
+            <button class="btn outline" type="button" data-copy>Copier le récapitulatif</button>
+            <a class="btn outline" data-mail hidden>Envoyer par e-mail</a>
+            <button class="btn outline" type="button" data-edit>Modifier</button>
+            <span class="copied" role="status"></span>
+          </div>
+        </section>
+      </div>
+
+      <aside>
+        <div class="aside-card">
+          <h3>Pièces à prévoir</h3>
+          <p>Liste habituelle, à confirmer auprès de l’administration :</p>
+          <ul>
+            <li>Pièce d’identité ou acte de naissance</li>
+            <li>Diplôme ou relevé de notes le plus récent</li>
+            <li>Photos d’identité</li>
+          </ul>
+        </div>
+        <div class="aside-card">
+          <h3>Une question ?</h3>
+          <p>Notre équipe répond à vos questions sur les filières et l’inscription.</p>
+          <a class="btn dark" href="contact.html" style="margin:0">Nous contacter</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="foot-brand" href="index.html" aria-label="UATM-GASA Formation – Accueil">
+          <span class="logo"><img src="images/logo.png" alt="" ></span>
+          <span><b>UATM-GASA</b><small>Formation</small></span>
+        </a>
+        <p class="foot-about">Université Africaine de Technologie et de Management. Le Générateur d’Avenir, depuis 1992.</p>
+        <a class="btn gold" href="pre-inscription.html">Se pré-inscrire</a>
+      </div>
+      <nav class="foot-links" aria-label="Navigation du pied de page">
+        <h4>Université</h4>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#formations">Formations</a>
+        <a href="index.html#campus">Campus</a>
+        <a href="pre-inscription.html">Pré-inscription</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <nav class="foot-links" aria-label="Domaines de formation">
+        <h4>Domaines</h4>
+        <a href="index.html#formations">Sciences et Technologies</a>
+        <a href="index.html#formations">Sciences de Gestion</a>
+        <a href="index.html#formations">Agronomie et Sciences du vivant</a>
+        <a href="index.html#formations">Droit et Relations internationales</a>
+      </nav>
+      <div class="foot-contact">
+        <h4>Nous trouver</h4>
+        <p><b>Siège</b>2<sup>e</sup> rue à gauche après le CEG Gbégamey, Cotonou, Bénin</p>
+        <p><b>Adresse postale</b>04 BP 1361 Cotonou</p>
+        <p><b>Campus</b>Gbégamey, Agla, Akpakpa, Abomey-Calavi, Porto-Novo</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 UATM-GASA Formation. Tous droits réservés.</span>
+      <span>Cotonou, Bénin</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
